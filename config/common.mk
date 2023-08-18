@@ -3,7 +3,7 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product-if-exists, vendor/lineage/config/crdroid.mk)
 $(call inherit-product-if-exists, vendor/addons/config.mk)
 
-PRODUCT_BRAND ?= crDroidAndroid
+PRODUCT_BRAND ?= GhostOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -107,6 +107,17 @@ endif
 PRODUCT_PACKAGES += \
     build-manifest
 
+ifeq ($(WITH_GAPPS), true)
+# GApps
+$(call inherit-product, vendor/gms/products/gms.mk)
+endif
+
+ifeq ($(WITH_GAPPS),true)
+GHOST_EDITION := PIXEL
+else
+GHOST_EDITION := AOSP
+endif
+
 # Lineage packages
 ifeq ($(PRODUCT_IS_ATV),)
 PRODUCT_PACKAGES += \
@@ -122,7 +133,11 @@ endif
 
 PRODUCT_PACKAGES += \
     LineageSettingsProvider \
+<<<<<<< HEAD
     Updater
+=======
+    LineageSetupWizard 
+>>>>>>> ddeb96a7 (vendor: Rebrand GhostOS)
 
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc
