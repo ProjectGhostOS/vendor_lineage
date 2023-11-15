@@ -968,5 +968,5 @@ export SKIP_ABI_CHECKS=true
 export BUILD_BROKEN_DISABLE_BAZEL=true
 
 # Override host metadata to make builds more reproducible and avoid leaking info
-export BUILD_USERNAME=nobody
-export BUILD_HOSTNAME=android-build
+export BUILD_USERNAME=Ghost
+export BUILD_HOSTNAME=Ghost-build
