@@ -1,8 +1,8 @@
 PRODUCT_VERSION_MAJOR = 14
-PRODUCT_VERSION_MINOR = 0
+PRODUCT_VERSION_MINOR = 1
 
 # Increase CR Version with each major release.
-CR_VERSION := Quantumania
+CR_VERSION := Muryōkūsho
 
 # Internal version
 LINEAGE_VERSION := GhostOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(CR_VERSION)-$(GHOST_EDITION)
