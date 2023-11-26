@@ -134,11 +134,7 @@ endif
 
 PRODUCT_PACKAGES += \
     LineageSettingsProvider \
-<<<<<<< HEAD
     Updater
-=======
-    LineageSetupWizard 
->>>>>>> ddeb96a7 (vendor: Rebrand GhostOS)
 
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc
@@ -218,9 +214,9 @@ endif
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
-    Settings \
     CarSystemUI \
-    SystemUI
+    SettingsGoogle \
+    SystemUIGoogle
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
