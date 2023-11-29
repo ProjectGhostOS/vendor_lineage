@@ -3,6 +3,7 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product-if-exists, vendor/lineage/config/crdroid.mk)
 $(call inherit-product-if-exists, vendor/addons/config.mk)
 $(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
+$(call inherit-product-if-exists, packages/overlays/ThemeIcons/config.mk)
 
 PRODUCT_BRAND ?= GhostOS
 
