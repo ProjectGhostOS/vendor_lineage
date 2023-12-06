@@ -107,12 +107,12 @@ endif
 PRODUCT_PACKAGES += \
     build-manifest
 
-ifeq ($(WITH_GAPPS), true)
+ifeq ($(WITH_GMS), true)
 # GApps
 $(call inherit-product, vendor/gms/products/gms.mk)
 endif
 
-ifeq ($(WITH_GAPPS),true)
+ifeq ($(WITH_GMS),true)
 GHOST_EDITION := PIXEL
 else
 GHOST_EDITION := AOSP
