@@ -107,15 +107,13 @@ endif
 PRODUCT_PACKAGES += \
     build-manifest
 
-ifeq ($(WITH_GMS), true)
-# GApps
-$(call inherit-product, vendor/gms/products/gms.mk)
-endif
-
-ifeq ($(WITH_GMS),true)
+# Inherit from GMS product config
+ifeq ($(WITH_MINI_GMS),true)
+$(call inherit-product, vendor/gms/gms_mini.mk)
+GHOST_EDITION := CORE
+else ifeq ($(WITH_GMS),true)
+$(call inherit-product, vendor/gms/gms_full.mk)
 GHOST_EDITION := PIXEL
-else
-GHOST_EDITION := AOSP
 endif
 
 # Lineage packages
