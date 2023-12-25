@@ -114,7 +114,7 @@ ifeq ($(WITH_MINI_GMS),true)
 $(call inherit-product, vendor/gms/gms_mini.mk)
 GHOST_EDITION := CORE
 else ifeq ($(WITH_GMS),true)
-$(call inherit-product, vendor/gms/gms_full.mk)
+$(call inherit-product, vendor/gms/products/gms.mk)
 GHOST_EDITION := PIXEL
 endif
 
