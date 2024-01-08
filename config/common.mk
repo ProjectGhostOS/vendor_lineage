@@ -227,7 +227,8 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
-    NetworkStackOverlay
+    NetworkStackOverlay \
+    PixelLauncherOverlay
 
 # Translations
 CUSTOM_LOCALES += \

@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "PixelLauncherOverlay",
+    product_specific: true,
+}
