@@ -214,6 +214,7 @@ endif
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
     CarSystemUI \
+    NexusLauncherRelease \
     SettingsGoogle \
     SystemUIGoogle
 
