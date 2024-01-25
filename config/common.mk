@@ -5,6 +5,11 @@ $(call inherit-product-if-exists, vendor/addons/config.mk)
 $(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
 $(call inherit-product-if-exists, packages/overlays/ThemeIcons/config.mk)
 
+# GhostOS Extras
+$(call inherit-product-if-exists, vendor/ghosticon/ghosticon.mk)
+$(call inherit-product-if-exists, vendor/wallx/wallxayra.mk)
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
 PRODUCT_BRAND ?= GhostOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
