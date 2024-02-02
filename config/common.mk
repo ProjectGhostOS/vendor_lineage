@@ -116,9 +116,11 @@ PRODUCT_PACKAGES += \
 ifeq ($(WITH_MINI_GMS),true)
 $(call inherit-product, vendor/gms/gms_mini.mk)
 GHOST_EDITION := CORE
+GHOSTOS_BUILD_TYPE := CORE
 else ifeq ($(WITH_GMS),true)
 $(call inherit-product, vendor/gms/products/gms.mk)
 GHOST_EDITION := PIXEL
+GHOSTOS_BUILD_TYPE := PIXEL
 endif
 
 # Lineage packages
