@@ -8,10 +8,9 @@ endif
 ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.crdroid.build.version=$(LINEAGE_VERSION) \
     ro.crdroid.display.version=$(LINEAGE_DISPLAY_VERSION) \
-    ro.ghost.build.type=$(GHOSTOS_BUILD_TYPE) \
-    ro.ghost.maintainer=$(GHOSTOS_MAINTAINER) \
     ro.crdroid.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
     ro.modversion=$(CR_VERSION) \
+    ro.matrixx.maintainer=$(GHOST_MAINTAINER) \
     ro.crdroidlegal.url=https://crdroid.net/legal.php
 
 # LineageOS Platform SDK Version
