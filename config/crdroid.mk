@@ -85,7 +85,8 @@ PRODUCT_PACKAGES += \
     BatteryStatsViewer \
     GameSpace \
     MatLog \
-    OmniJaws
+    OmniJaws \
+    OmniStyle 
 
 ifeq ($(TARGET_SUPPORTS_64_BIT_APPS),true)
 PRODUCT_PACKAGES += \
